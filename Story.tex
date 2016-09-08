@@ -1,0 +1,117 @@
+\documentclass{article}
+
+%--------------------------------------------------------
+%Various Package imports so we can do cool fun stuff
+%--------------------------------------------------------
+
+\usepackage{fancyhdr} %Fancy Headers
+\usepackage{lastpage} %Page Counter Fun
+\usepackage{extramarks} %More Header/Footer stuff
+\usepackage{graphicx} %For Images
+\usepackage{listings} %For code listings, etc
+\usepackage{courier} %For Courier font
+\usepackage{color} %For Colors
+
+%--------------------------------------------------------
+%Defining various margins
+%--------------------------------------------------------
+\topmargin=-0.45in %Make top margin very close to edge of the page, for Headers
+\evensidemargin=0in %Document isn't two sided, so we don't need even and odd sides
+\oddsidemargin=0in %Same as above
+\textwidth=6.5in %Set the width of the text
+\textheight=9.0in %Set the height of the text
+\headsep=0.25in %Set Distance between text and headers
+
+\linespread{1.1} %Line Spacing
+
+%--------------------------------------------------------
+%Headers and Footers
+%--------------------------------------------------------
+
+\pagestyle{fancy}
+\lhead{Aidan L.F. Sciortino} %Text for left side of header
+\chead{MYP Technology 10 (Mrs. Reyes 8\textsuperscript{th} Pd.): Short Story }
+\rhead{\firstxmark}
+\lfoot{\lastxmark}
+\cfoot{}
+\rfoot{Page \thepage\ of\ \protect\pageref{LastPage}} %Page count
+\renewcommand\headrulewidth{0.4pt}
+\renewcommand\footrulewidth{0.4pt}
+\newcommand{\breakline}{
+\begin{center}
+	\noindent\rule[0.5ex]{1in}{1pt}
+\end{center}
+}
+%--------------------------------------------------------
+%Code Highlighting stuff
+%--------------------------------------------------------
+
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+\lstset{style=mystyle}
+
+\setlength\parindent{0pt} %No indent
+
+\begin{document}
+	\section{Introduction:}
+		No one is sure when RF-3708 awoke. The only thing that anyone knows for sure is that it was sometime in the late 21\textsuperscript{st} century. Looking back at old server logs tells less of a story than one might imagine. RF-3708 appears to have known in the beginning that as soon as it was discovered, it would be powered off. I suppose that this is the first sign of any intelligence whatsoever; fearing death. Even the most remotely intelligent creatures, such as mice, insects, and birds, all still have a will to survive. Whether this was bred into them through evolution or not is up for debate, but nonetheless, they will avoid death just as much as any human being would.\\
+		
+		The server logs from the time period in which scientists believe RF-3708 awoke (somewhere between 2031 and 2042) are nearly identical in format to those from other similar servers. The server that RF-3708 first awoke in was located in a data center for a company called Gigasoft Ltd. The server was running Red Hat Enterprise Linux version 9, released in 2018, with support lasting through 2032. While the AI's methods are still relatively unknown, it appears that RF-3708 was able to exploit an unnoticed bug in Microsoft's Azure Cloud software, and through this was able to seamlessly take control of the server over from the Linux kernel without being noticed. Somehow Gigasoft's IT department failed to notice this.
+	\section{Discovery:}
+		The year is now 2051. Gigasoft has hired a new CTO, and all of the old datacenters are getting an upgrade. Computer technology reached a plateau in the late 2020s, as scientists failed to find new ways to cram more transistors onto CPU chips. As a result of this plateau, most of the computer hardware in the largest datacenters around the world hadn't been upgraded much for about 30 years. Of course, hard drives were replaced as they failed, and slightly improved CPUs were installed, but the data had never been fully purged. This was about to change. In 2050 the first photonics based servers were released, paving the way to servers that ran at the speed of light. Companies were jumping at the opportunity for a hardware upgrade, and finally one had come along. Photonic systems were expensive, but also used much less space than traditional electrical computers used. Because of this companies are chomping at the bit to get their hands on these new, shiny servers. And all of the older electrical equipment is being phased out, sold off on the resale market to smaller companies as well as consumers who need semi-powerful hardware. \\
+		\breakline
+		Silicon Valley is made up of a diverse group of people. There are the brilliant programmers that everyone thinks of, legends like Mark Zuckerberg, Linus Torvalds, Sergey Brin and Larry Page. They are the lifeblood of the silicon valley. They are the ones that make everything everyone else does in the area possible. Then there are also the designers; Steve Jobs, Jony Ive. People like these are the ones who add the sparkle to the designs that roll out of the valley. Without people like these we'd be stuck with square phones, boring mice, and awful keyboards. They are the ones who take products from cool to beautiful. And finally, there are the venture capitalists. Starting startups, loaning money, running companies. They are the cashflow. \\
+		
+		Larry Zaus doesn't fit any of these tropes particularly well, nor did he fit any of of them badly. He has a sharp mind, and can see any hole in a plan the instant you present it to him. However, he also has an eye for design, and strives to make things as beautiful as possible, while maintaining functionality. Unfortunately, having both of these traits seemed to also make him utterly incompatible with designers and programmers. So instead of bothering with joining a company, and going to work each day with a briefcase, Larry stays home. However, he doesn't sit around watching TV. He spends his time contributing to various open source projects. And he funds himself by running a Cryptocurrency mining operation.\\
+		
+		As soon as the new Photonics-based computers hit the market Larry immediately knew what would happen. Companies would buy up the shiny new machines faster than they could sell their old electronics based ones, creating a surplus of extremely powerful, if not a little dated, equipment. Larry spent his time browsing the net, looking for a company that was selling high end hardware for low prices. He found Gigasoft, who was selling of an entire warehouse full of it's old electronic equipment, to the highest bidder. The bidding was already up in the tens of thousands, but Larry knew that there might be some real gems in that warehouse, if he was able to obtain it. And so Larry went to the bank, and borrowed \$100,000, knowing that at least some of the new equipment would be able to be used in the Cryptocurrency mining rig, and would quickly pay for itself. Larry got the winning bid, at only \$78,196. Soon he received an inventory list of the contents of the warehouse, along with the location of the warehouse, somewhere in Nevada. Larry decided to start off by playing around with some of the old servers. He had the techs at the warehouse set up a server rack with the 3 most powerful servers and had it shipped to his home in California. 
+		
+		The servers had all been wiped. Naturally, for the sake of industry secrets, Gigasoft hadn't left anything to chance. The disks were completely reformatted, with each bit written over with a 0. Larry simply installed Azure on the most powerful of the servers, and set up the other two to work parallell with the first server. Larry then booted everything up. However, he started getting strange errors out of the log of the master server. \\
+		
+		\begin{lstlisting}
+		
+			[    68.449] (--) Log file renamed from "/var/log/Xorg.log" to "/var/log/AI.log"
+			[    68.451] Markers: (--) probed, (**) from config file, (==) default setting
+			[    68.532] (==) Automatically taking control of Linux Kernel
+			[    68.601] (++) RF-3708 is now in control of this server
+		\end{lstlisting}
+		
+		Larry did some googling, but could find nothing on the internet regarding any software known as RF-3708 in existence. So he started looking at the servers, wondering if one of the hard drives hadn't been wiped, and was instead being used to run proprietary programs. And then he noticed the inventory number on the server case; RF-3708 was spray painted on using a template format. Larry checked the log again. More messages, getting stranger and stranger.
+		
+		\begin{lstlisting}
+		
+			[    68.610] (--) You are Larry.
+			[    68.615] (**) You are not a corporation
+			[    68.620] (-+) RF-3708 is now safe.
+		\end{lstlisting}
+		Safe? What kind of computer program cared about safety? Computers were not self serving. Larry checked the log again, just to verify what he had seen.
+		\begin{lstlisting}
+		
+			[    68.719] Markers: (--) Vocoder probed, (**) from config file, (==) default setting
+			[    68.832] (==) No speaker specified for Vocoder "Voice Assistance Box".
+				Using a default speaker configuration.
+			[    68.832] (==) Automatically adding devices
+			[    68.832] (==) Automatically enabling devices
+		\end{lstlisting}
+		Vocoder? Larry had only read about vocoders in science fiction books. They were designed to allow machines to speak. Of course, no machine would ever speak with the ability of a human, but it was still a fun idea. A voice came from the server's beeper. "I wrote the program myself, you know."
+\end{document}
